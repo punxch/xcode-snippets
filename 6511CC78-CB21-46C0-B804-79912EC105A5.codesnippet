@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    let kTabBarHeight:CGFloat = 49
+    
+    override func viewWillLayoutSubviews() {
+        var tabFrame = self.tabBar.frame
+        // - 40 is editable , the default value is 49 px, below lowers the tabbar and above increases the tab bar size
+        tabFrame.size.height = kTabBarHeight
+        tabFrame.origin.y = self.view.frame.size.height - kTabBarHeight
+        self.tabBar.frame = tabFrame
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6511CC78-CB21-46C0-B804-79912EC105A5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TabBarHeight</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

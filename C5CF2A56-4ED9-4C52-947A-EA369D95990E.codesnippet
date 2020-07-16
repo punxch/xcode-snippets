@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func instantiateFromNib() -&gt; RAMAnimatedTabBarController {
+        let nib = UINib(nibName: "RootTabBarController", bundle: nil)
+        let vc = nib.instantiate(withOwner: nil, options: nil).first as! RAMAnimatedTabBarController
+        return vc
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C5CF2A56-4ED9-4C52-947A-EA369D95990E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>instantiateViewControllerFromNib</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if (self.responds(to: #selector(getter: UIViewController.edgesForExtendedLayout))) {
+            var frame = self.view.frame
+            let statusHeight = statusBarHeight()
+            frame.origin.y = statusHeight
+            frame.size.height = frame.size.height - statusHeight
+            self.view.frame = frame
+            let iv = UIView.init(frame: CGRect(x: 0, y: 0, width: frame.width, height: statusHeight))
+            iv.backgroundColor = UIColor(named: "colorBackgroundSecond")
+            self.view.window?.insertSubview(iv, aboveSubview: self.view)
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>82B983BF-7580-4A36-96E3-2BC8492867FA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>StatusBarSpace</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
