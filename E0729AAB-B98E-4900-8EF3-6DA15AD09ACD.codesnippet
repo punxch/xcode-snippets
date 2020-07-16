@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>enum Container {
+  case IntegerValue(Int)
+  case StringValue(String)
+}
+
+var arr: [Container] = [
+  .IntegerValue(10),
+  .StringValue("Hello"),
+  .IntegerValue(42)
+]
+
+for item in arr {
+  switch item {
+  case .IntegerValue(let val):
+    println("Integer: \(val)")
+  case .StringValue(let val):
+    println("String: \(val)")
+  }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E0729AAB-B98E-4900-8EF3-6DA15AD09ACD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>enumeration</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

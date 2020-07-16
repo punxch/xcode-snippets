@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let buttons = [locationView.buttonGo, UIButton(), UIButton(), UIButton(),UIButton()]
+let taps = buttons.enumerated().map { ($0.0, $0.1.rx.tap) }
+let toInts = taps.map { index, obs in obs.map { index } }
+let mergedTaps = Observable.merge(toInts)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BB533C8A-5CE3-4712-AFC6-894A2276083C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>RxSwift buttons tap</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
